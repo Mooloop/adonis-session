@@ -70,7 +70,7 @@ class Session {
       this._isNewSessionId = false
       return existingSessionId
     }
-    return uuid.v4()
+    return uuid.v4() + uuid.v4() + uuid.v4() + uuid.v4();
   }
 
   /**
